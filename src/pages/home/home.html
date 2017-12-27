@@ -8,11 +8,31 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <div class="initd">
+    <p class="init">Add a device to start!</p>
+  </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <h2>Devices list</h2>
+  <div class="devices">
+    <ion-navbar>
+        <ion-title>
+          编号89757
+        </ion-title>
+        <ion-buttons end>
+          <button ion-button icon-only (click)="configure()">
+            <ion-icon name="options"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-navbar>
+    <ion-item>
+      <ion-range  class="ir" pin="true"  min="-50" max="50" [(ngModel)]="saturation" color="secondary">
+      <ion-label range-left>-50</ion-label>
+       <ion-icon range-left name="arrow-dropup"></ion-icon>
+       <ion-icon range-right name="arrow-dropdown"></ion-icon>
+      <ion-label range-right>50</ion-label>
+    </ion-range>
+</ion-item>
+  </div>
+
 </ion-content>

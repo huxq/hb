@@ -21,9 +21,9 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
+$range-md-knob-width:24px;
+$range-md-pin-font-size:14px;
+$range-md-bar-height:4px;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -40,6 +40,7 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222
 );
+
 
 
 // App iOS Variables
